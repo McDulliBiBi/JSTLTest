@@ -27,13 +27,15 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/jstl/jstl -->
+    <!-- jsp标准的标签库需要依赖该jar包 -->
      <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
-      <dependency>
+
+    <!-- 自定义标签库需要增加这个jar包依赖-->
+    <dependency>
           <groupId>javax.servlet.jsp</groupId>
           <artifactId>jsp-api</artifactId>
           <version>2.1</version>
