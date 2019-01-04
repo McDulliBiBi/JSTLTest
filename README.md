@@ -2,7 +2,7 @@ pom.xml中需要加入jstl jar包的依赖
 
 
 2019/01/04：
-一.自定义标签库引入的主要作用是避免在JSP中写Java代码。
+一.自定义标签库引入的主要作用是避免在JSP中写Java代码。<br/>
 二.需要实现的步骤：
 0.pom.xml中需要引入jsp-api jar包依赖。（注：该依赖的scope属性要设为provided，因为Tomcat容器中已经有这个jar包了，provided允许maven在编译，测试时使用该jar包，打war包及运行时使用的还是Tomcat容器中的jar包。）
 1.新增继承Tag父类的实现类，重写父类中的doStartTag()，doEndTag()，在这些方法中填写原本需要在JSP中实现的java代码
