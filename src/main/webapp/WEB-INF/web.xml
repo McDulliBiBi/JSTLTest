@@ -9,4 +9,11 @@
         http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
   <display-name>Archetype Created Web Application</display-name>
 
+  <jsp-config>
+    <taglib>
+      <taglib-uri>http://mycompany.com</taglib-uri>
+      <taglib-location>/WEB-INF/mytaglib.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+
 </web-app>

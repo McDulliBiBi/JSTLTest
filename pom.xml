@@ -28,19 +28,26 @@
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/jstl/jstl -->
-    <dependency>
+     <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
+      <dependency>
+          <groupId>javax.servlet.jsp</groupId>
+          <artifactId>jsp-api</artifactId>
+          <version>2.1</version>
+        <!-- scope表示该jar包只在编译，测试环节时使用，不会把jar包打入war包中，因为tomcat容器中已经提供了这个jar包，放进war包的话会报jar包冲突 -->
+          <scope>provided</scope>
+      </dependency>
 
-    <!-- https://mvnrepository.com/artifact/taglibs/standard -->
-  <!--  <dependency>
+      <!-- https://mvnrepository.com/artifact/taglibs/standard -->
+   <!-- <dependency>
       <groupId>taglibs</groupId>
       <artifactId>standard</artifactId>
       <version>1.1.2</version>
-    </dependency>-->
-
+    </dependency>
+-->
   </dependencies>
 
   <build>

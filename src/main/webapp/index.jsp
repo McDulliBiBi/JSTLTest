@@ -82,5 +82,8 @@ if(name1 == "may"){
     <!-- java中使用js变量有点麻烦，要写一个隐藏的form表单..-->
 </div>
 
+<div>用法8：
+${t1}
+</div>
 </body>
 </html>
